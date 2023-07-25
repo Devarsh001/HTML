@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <table cellpadding="5" width="100%">
+            
+            <tr>
+                <th colspan="2"><u>Registration Form</u></th>
+            </tr>
+            
+            <tr><td></td></tr>
+
+            <tr>
+                <td align="right">Name:</td>
+                <td>
+                    <input type="text" name="name" required pattern="[a-zA-Z]{3,7}" title="Alphabets only with min 3 charcters and max 7 characters" placeholder="First Name">
+                    <input type="text" required pattern="[a-zA-Z]{3,7}" title="Alphabets only with min 3 charcters and max 7 characters" placeholder="Last Name">
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right">Email:</td>
+                <td><input type="email" name="email" required placeholder="Your E-mail Address"></td>
+            </tr>
+
+            <tr>
+                <td align="right">Password:</td>
+                <td><input type="password" name="password" required placeholder="E-mail Password"></td>
+            </tr>
+
+            <tr>
+                <td align="right">Mobile:</td>
+                <td><input type="text" name="mobile" required pattern="[0-9]{10}" placeholder="Contact Number" title="10 digit number "></td>
+            </tr>
+
+            <tr>
+                <td align="right">Address:</td>
+                <td><textarea name="address" cols="50" rows="5" required placeholder="Your Residential Adress"></textarea></td>
+            </tr>
+            
+            <tr>
+                <td align="right">Gender:</td>
+                <td><input type="radio" name="gender">Male <input type="radio" name="gender">Female <input type="radio" name="gender">Others  </td>
+            </tr>
+
+            <tr>
+                <td align="right">DOB:</td>
+                <td><input type="datetime-local" name="dateofbirth" required placeholder="Your BirthDate"></td>
+            </tr>
+
+            <tr>
+                <td align="right">Hobbies:</td>
+                <td>
+                    <input type="checkbox" name="hobbies">Cricket
+                    <input type="checkbox" name="hobbies">Travelling
+                    <input type="checkbox" name="hobbies">Dancing
+                    <input type="checkbox" name="hobbies">Reading
+                    <input type="checkbox" name="hobbies">Swimming
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right">Country:</td>
+                <td>
+                    <select>
+                        <option hidden>--Select Country--</option>
+                        <option value="" selected>INDIA</option>
+                        <option value="">SRILNKA</option>
+                        <option value="">USA</option>
+                        <option value="">AUSTRALIA</option>
+                        <option value="" disabled>PAKISTAN</option>
+                        <option value="">UAE</option>
+                        <option value="">AFRICA</option>
+                </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right">Favourite Colour:</td>
+                <td><input type="color" name="color"></td>
+            </tr>
+
+            <tr>
+                <td align="right" rowspan="2">languages you <br>can speak:</td>
+                <td><input type="number" name="languages" value="0"></td>
+            </tr>
+
+            <tr><td></td></tr>
+
+            <tr>
+                <td align="right">Algorithm Skills:</td>
+                <td><input type="range" name="AlgSkl"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" name="submit" value="Register">
+                    <input type="reset" name="reset">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+</html>
