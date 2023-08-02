@@ -3,31 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table</title>
+    <title>Document</title>
     <style>
-        fieldset
+        #t1
         {
-            background-color:cadetblue;
+            width: 100%;
+            border: 2px solid black;
+        }
+        #t2
+        {
+            width: 100%;
+            background: url(Images/Self.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 25px;
+        }
+        #t3
+        {
+            width: 20%;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            height: 300px;
         }
         .a
         {
-            width: 20%;
-            text-align: right;
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding-left: 100px;
+            padding-top: 20px;
             font-size: large;
         }
         .b
         {
-            height: 200px;
+            text-align: right;
+            word-spacing: 35px;
+            padding-right: 50px;
+            padding-top: 20px;
+        }
+        .c1
+        {
+            color: black;
+            font-size: larger;
+        }
+        .c2
+        {
+            background: navy;
+            color: white;
+        }
+        .d
+        {
+            height: 150px;
             text-align: center;
             font-size: 500%;
             font-family: cursive;
+            padding-top: 20px;
         }
-        .c
+        input
         {
-            background-color: rgb(192, 102, 102);
+            height: 25px;
+            width: 300px;
         }
-        .d
+        ::placeholder
+        {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: medium;
+            background: url(Images/TeriHoNaSaki.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #button
         {
             background-color:#34B7F1;
             font-family: 'Times New Roman', Times, serif;
@@ -37,106 +78,66 @@
             color: aliceblue;
             border-radius: 7px;
         }
-        .e
-        {
-            background-color: white;
-        }
-        #t1
-        {
-            width: 100%;
-        }
-        #t2
-        {
-            width: 60%;
-        }
-        #t3
-        {
-            padding-top: 30px;
-            width: 30%;
-        }
-        input
-        {
-            height: 25px;
-            border-color: white;
-        }
-        ::placeholder
-        {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: small;
-        }
-        legend
-        {
-            text-align: center;
-            font-size:xx-large;
-            background-color: white;
-        }
     </style>
 </head>
 
 <body>
-    
-    <fieldset>
-        <legend> Common Task 05 (using table tag)</legend>
-        
-        <form action="" method="post">
-        
-            <table id="t1">
+    <table id="t1" align="center">
+        <tr>
+            <td>
+                <table id="t2" align="center">
+                    <tr>
+                        <td width="20%" class="a"><strong>DELUXE</strong></td>
+                        <td width="80%" class="b">
+                            <a href="" class="c1">Home</a>
+                            <a href="" class="c1">Reastaurants</a>
+                            <a href="" class="c1">Rooms</a>
+                            <a href="" class="c1">About</a>
+                            <a href="" class="c1">Blog</a>
+                            <a href="" class="c2">Contact-us</a>
+                        </td>
+                        <tr>
+                            <td colspan="2" class="d">Send Us A Note</td>
+                        </tr>
+                    </tr>
+                </table>
+            </td>
+        </tr>
 
-                <tr class="e">
-                    <td class="a">DELUXE</td>
-                    <td width="80%">
-                        <table id="t2" align="right">
-                            <tr>
-                                <td width="20%"> <a href=""> Home </a></td>
-                                <td width="20%"> <a href=""> Rooms </a></td>
-                                <td width="20%"> <a href=""> Restaurant </a></td>
-                                <td width="20%"> <a href=""> About </a></td>
-                                <td width="20%" class="c"> <a href=""> Contact </a></td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-
-                <tr class="e">
-                    <td colspan="2" class="b"> Send Us A Note</td>
-                </tr>
-        
-                <tr class="e">
-                    <td colspan="2">
-                        <div>
-                        <table id="t3" align="center">
+        <tr class="tr2">
+            <td>
+                <form action="">
+                    <center>
+                        <table id="t3">
                             <tr>
                                 <td>
-                                    Your name* <br>
-                                    <input type="text" size="60" placeholder="enter your fullname">
+                                    Name* <br>
+                                    <input type="text" name="name" id="" placeholder="enter your full name">
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    Your Email address* <br>
-                                    <input type="text" size="60" placeholder="enter your e-mail address">
-                                </td>
+                                    Your E-mail address* <br>
+                                    <input type="email" name="name" id="" placeholder="enter your email address">
+                                </td> 
                             </tr>
                             <tr>
                                 <td>
                                     Message* <br>
-                                    <textarea name="" id="" cols="58" rows="10" ></textarea>
+                                    <textarea name="" id="" cols="40" rows="10" placeholder="..."></textarea>
+                                </td>
+                            </tr>
+                            <tr >
+                                <td align="center">
+                                    <input id="button" type="submit" value="SEND MESSAGE">
                                 </td>
                             </tr>
                         </table>
-                    </td>
-                </tr>
-        
-                <tr class="e">
-                    <td colspan="2" align="center">
-                        <input class="d" type="submit" value="SEND MESSAGE">
-                    </td>
-                </tr>
-        
-            </table>
-        
-        </form>
-    </fieldset>
-
+                    </center>
+                </form>
+            </td>
+        </tr>
+    
+    </table>
 </body>
 </html>
